@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Dresswardrobe</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="nameerror">UserName already taken</string>
+    <string name="firstNameError">Name cannot have numbers or special characters</string>
+    <string name="lastNameError">Name cannot have numbers or special characters</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string-array name="Seasons">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+        <item>Winter</item>
+    </string-array>
+    <string-array name="Size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>X-Large</item>
+    </string-array>
+    <string-array name="Categories">
+        <item>Cloths</item>
+        <item>Shoes</item>
+    </string-array>
+    <string-array name="Quant">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_allow_sharing">AllowSharing</string>
+</resources>

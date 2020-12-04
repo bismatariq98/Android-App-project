@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/PassLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsrLogin"
+        android:inputType="textPassword"/>/>
+
+    <EditText
+        android:id="@+id/UsrLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusedByDefault="true"/>
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="5dp"
+        android:text="Login"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/PassLogin"
+        app:layout_constraintTop_toBottomOf="@+id/PassLogin" />
+
+    <TextView
+        android:id="@+id/SignUpAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="31dp"
+        android:text="New User? Signup now"
+        android:textColor="#1B31A5"
+        app:layout_constraintStart_toStartOf="@+id/BtnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

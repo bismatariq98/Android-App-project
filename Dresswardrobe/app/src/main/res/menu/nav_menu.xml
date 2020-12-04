@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/winSelect"
+        android:title="Winter Selection"/>
+    <item
+        android:id="@+id/sumSelect"
+        android:title="Summer Selection" />
+
+    <item
+        android:id="@+id/userslist"
+        android:title="Find users"/>
+    <item
+        android:id="@+id/noti"
+        android:title="Notifications"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>

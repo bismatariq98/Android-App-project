@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Content_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="411dp"
+        android:layout_height="49dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/FFTab"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="10dp"
+            android:text="Friends &amp; Family" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/WardrobeTab"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="My wardrobe" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recview"
+        android:layout_width="402dp"
+        android:layout_height="613dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout"
+        />
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/status_bar_item_app_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab"
+        android:layout_width="45dp"
+        android:layout_height="200dp"
+        android:layout_margin="10sp"
+        android:layout_marginRight="16dp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:src="@drawable/addingsign"
+        android:tint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:fab_addButtonColorNormal="@color/colorPrimaryDark"
+        app:fab_colorNormal="@color/colorPrimaryDark"
+        app:fab_colorPressed="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/singleitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:src="@drawable/item"
+            app:borderWidth="0dp"
+            app:elevation="@dimen/fab_labels_margin"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_labelStyle="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:fab_labelsPosition="right"
+            app:fab_title="Add a single item" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addcoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+
+            android:src="@drawable/coll"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_labelsPosition="left"
+            app:fab_title="Add collection" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
